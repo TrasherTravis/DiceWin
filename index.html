@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice2Win</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <!-- Start of nav section -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">GAMES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAIRPLAY </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of nav section -->
+    <div class="container">
+        <div class="circles"></div>
+        <div class="circle2"></div>
+        <!-- Start of hero section -->
+        <section id="heroSection" class=" d-flex flex-column align-items-center text-center justify-content-center">
+            <h1>Fair games that pay <br> Ether</h1>
+            <p>Provably fair bets backed by simple open-sourced contract <br>
+                No sign-ups or deposits, just 1% house edge and jackpot! </p>
+        </section>
+        <!-- End of hero section -->
+
+        <!-- Start of hero section -->
+        <section class="row my-5 mx-2 justify-content-between" id="infoSection">
+            <div class="card row align-items-start  col-lg-3 col-12">
+                <h6>24h wagers</h6>
+                <h2>152.76 <span>ETH</span></h2>
+                <h6>96 bets</h6>
+            </div>
+            <div class="card row align-items-start  col-lg-3 col-12">
+                <h6>Recent Jackpot</h6>
+                <h2>1.18 <span>ETH</span></h2>
+                <h6>Won by 0xhiq073 </h6>
+            </div>
+            <div class="card row align-items-start  col-lg-3 col-12">
+                <h6>24h winners</h6>
+                <div class="winner"><img src="assets/winner.svg" alt="">0xEvi7gkx <span>10.61 <span>ETH</span>
+                    </span>
+                </div>
+                <div class="winner"><img src="assets/winner.svg" alt="">0xEvi7gkx <span>10.61 <span>ETH</span>
+                    </span>
+                </div>
+                <!-- <div class="winner"><img src="assets/winner.svg" alt="">0xEvi7gkx <span>10.61 <span>ETH</span>
+                    </span>
+                </div> -->
+            </div>
+        </section>
+        <!-- End of hero section -->
+    </div>
+    <section class="container" id="gameSection">
+        <div class="row justify-content-between">
+            <div class="row game justify-content-center coindlip text-center col-md-3">
+                <div class="icon"><img src="assets/coindlip_al.svg" alt=""></div>
+                <h2>Coin Flip</h2>
+                <p>50% win chance</p>
+                <p>Winning bet pays 1.98x</p>
+                <a href="coinflip.html" class="my-3">Play now <img src="assets/right.svg"></a>
+            </div>
+            <div class="row game justify-content-center rolldice text-center col-md-3">
+                <div class="icon"><img src="assets/rolldice_al.svg" alt=""></div>
+                <h2>Roll a dice</h2>
+                <p>Bet on numbers, 1 to 6 </p>
+                <p>Winning bet pays up to 5.94x</p>
+                <a href="onedice.html" class="my-3">Play now <img src="assets/right.svg"></a>
+            </div>
+            <div class="row game justify-content-center twodice text-center col-md-3">
+                <div class="icon"><img src="assets/twodice_al.svg" alt=""></div>
+                <h2>Two dice</h2>
+                <p>Bet on sum, 2 to 12</p>
+                <p>Winning pays up to 35.64x</p>
+                <a href="twodice.html" class="my-3">Play now <img src="assets/right.svg"></a>
+            </div>
+            <div class="row game justify-content-center etheroll text-center col-md-3">
+                <div class="icon"><img src="assets/etheroll_al.svg" alt=""></div>
+                <h2>Etheroll</h2>
+                <p>ANY win chance, 1% to 97%</p>
+                <p>Winning bet pays upto 99x</p>
+                <a href="etheroll.html" class="my-3">Play now <img src="assets/right.svg"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid px-5 ">
+        <div class="footer d-flex justify-content-around">
+            <div class="footer-section">
+                <h2 class="h2">Our Games</h2>
+                <br><a href="coinflip.html" class="h3">Coin flip</a>
+                <br><a href="onedice.html" class="h3">Dice</a>
+                <br><a href="twodice.html" class="h3">Two dice</a>
+                <br><a href="etheroll.html" class="h3">Etheroll</a>
+            </div>
+            <div class="footer-section">
+                <h2 class="h2">Blockchain & friends</h2>
+                <br><a href="https://www.example.com" class="h3">Your balance 0.00 ETH</a>
+                <br><a href="https://www.example.com" class="h3">Network: Main net</a>
+                <br><a href="https://www.example.com" class="h3">Smart Contract</a>
+            </div>
+            <div class="footer-section">
+                <h2 class="h2">Featured on</h2>
+                <br><a href="https://www.example.com" class="h3">Github</a>
+                <br><a href="https://www.example.com" class="h3">State of the DApps</a>
+                <br><a href="https://www.example.com" class="h3">DappRadar</a>
+                <br><a href="https://www.example.com" class="h3">Bloomberg </a>
+            </div>
+            <div class="footer-section">
+                <h2 class="h2">Reach out to us</h2>
+                <br><a href="https://www.example.com" class="h3">Telegram</a>
+                <br><a href="https://www.example.com" class="h3">Twitter</a>
+                <br><a href="https://www.example.com" class="h3">Good of email</a>
+                <br><a href="termsnconditions.html" class="h3">Terms of service </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+</script>
+<script>
+    $(".navbar-toggler-icon").click().toggleClass("show")
+</script>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice2Win</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Start of nav section -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">GAMES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAIRPLAY </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of nav section -->
+    <div class="container col-md-8 col-10" id="TNDC">
+        <div class="circles"></div>
+        <div class="circle2"></div>
+        <h2>What is provably fair on-chain gambling?</h2>
+        <h3>Simply put, provably fair means that any bet outcome can be independently verified and that the house or
+            other players have no means of tampering with the result.</h3>
+        <h2>Is dice2.win provably fair?</h2>
+        <h3>Yes. The whole gameplay is controlled by Ethereum Smart Contract that computes random numbers based on house
+            inputs and blockchain data (block hashes). Any party can audit the contract as well as inspect any
+            transaction to make sure that neither dice2.win nor malicious players are influencing the results.</h3>
+        <h2>How are you different from the other gambling sites?</h2>
+        <h3>Placing a bet on dice2.win has much lower transaction fee compared to competing houses − this allows
+            supporting bets as low as 0.01 ETH. Our games are very simple & easily understandable, just like tossing a
+            coin or rolling a dice.
+        </h3>
+        <h3>And, of course, we have jackpot!</h3>
+        <h2>Is there any catch? Explain how it works like I'm five.</h2>
+        <h3>This is where we have to get a bit technical:</h3>
+        <ul>
+            <li>dice2.win picks a secret random number and provides you with its hash.</li>
+            <li>You send your bet in Ethereum transaction to our smart contract along with the hash from previous step.
+            </li>
+            <li>At this point dice2.win has already commited to a number,
+                prior to you chosing an outcome.</li>
+            <li>Once your transaction is confirmed by the network,
+                the contract stores the hash and bet details.</li>
+            <li>Our croupier bot "reveals"the number by sending a bet settling transaction. The contract accepts the
+                transaction if and only if the hash of provided number is the same as the stored one.</li>
+            <li>The contract mixes the number and block hash of the bet transaction to get a random number.</li>
+            <li>The contract decides whether you won or lost and sends you the winning amount of Ether.</li>
+        </ul>
+        <h3>Can dice2.win tamper with the results? Nope,
+            as the contract keeps track of secret number's hash, meaning the house cannot change the number after the
+            bet has been accepted. Mixing the block hash with the numbers makes the result totally random yet disallows
+            miners from crafting winning bets. On the other hand, dice2.win themselves cannot control bet outcomes
+            either because of block hash component. This is a well-known "commitment scheme" which enables dice2.win to
+            provide gambling-grade random number generation allowing for big bets, jackpots and quick settlements while
+            being fully transparent.</h3>
+        <h2>What if I want to really verify that everything you say is actually true?</h2>
+        <h3>Feel free to study our Smart Contract - it's available on Github. In case you have any questions or
+            hesitations, drop us a line via Telegram, Twitter or e-mail.</h3>
+        <h2>What are house fees?</h2>
+        <h3>Every bet is deducted 1% in favour of the house (to help us pay the bills and keep the game running) and 1%
+            more gets accumulated in the jackpot. Anyone who bets high enough (at the moment it is 0.1 ETH and up) has a
+            chance of winning the whole amount of jackpot!</h3>
+    </div>
+
+    <div class="text-center">
+        <h2 style="font-family: 'spartan';font-size: 1.3rem;font-weight: 600; margin-top: 10vh;">Happy Gambling !</h2>
+    </div>
+    <footer class="container-fluid px-5 ">
+        <div class="footer d-flex justify-content-around">
+            <div class="footer-section">
+                <h2 class="h2">Our Games</h2>
+                <br><a href="coinflip.html" class="h3">Coin flip</a>
+                <br><a href="onedice.html" class="h3">Dice</a>
+                <br><a href="twodice.html" class="h3">Two dice</a>
+                <br><a href="etheroll.html" class="h3">Etheroll</a>
+            </div>
+            <div class="footer-section">
+                <h2 class="h2">Blockchain & friends</h2>
+                <br><a href="https://www.example.com" class="h3">Your balance 0.00 ETH</a>
+                <br><a href="https://www.example.com" class="h3">Network: Main net</a>
+                <br><a href="https://www.example.com" class="h3">Smart Contract</a>
+            </div>
+            <div class="footer-section">
+                <h2 class="h2">Featured on</h2>
+                <br><a href="https://www.example.com" class="h3">Github</a>
+                <br><a href="https://www.example.com" class="h3">State of the DApps</a>
+                <br><a href="https://www.example.com" class="h3">DappRadar</a>
+                <br><a href="https://www.example.com" class="h3">Bloomberg </a>
+            </div>
+            <div class="footer-section">
+                <h2 class="h2">Reach out to us</h2>
+                <br><a href="https://www.example.com" class="h3">Telegram</a>
+                <br><a href="https://www.example.com" class="h3">Twitter</a>
+                <br><a href="https://www.example.com" class="h3">Good of email</a>
+                <br><a href="termsnconditions.html" class="h3">Terms of service </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+</script>
+
+</html>

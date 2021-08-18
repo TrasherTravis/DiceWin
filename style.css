@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,400;1,600;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: 'nunito';
+  background: radial-gradient(circle, #1a2653 -20%, #151515 100%);
+  color: white;
+}
+
+.navbar-collapse.show {
+  background-color: #151515;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 250px;
+  background-color: gold;
+  border-top-left-radius: 140px;
+  border-bottom-left-radius: 140px;
+  border-left: 0;
+  background-color: #1A2653;
+  opacity: 60%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  z-index: -1;
+}
+
+.circle2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 300px;
+  background-color: gold;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 300px;
+  border-left: 0;
+  background-color: #1A2653;
+  opacity: 60%;
+  -webkit-transform: translate(0%, -40%);
+          transform: translate(0%, -40%);
+  z-index: -1;
+}
+
+nav {
+  padding: 1.5rem 4% !important;
+  color: white !important;
+  font-weight: 700;
+}
+
+nav .nav-link {
+  color: white !important;
+  letter-spacing: 4px;
+  margin-left: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  font-family: 'Spartan';
+}
+
+nav .nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+nav .navbar-brand img {
+  width: 150px;
+  margin-top: -2vh;
+}
+
+#heroSection {
+  margin: 14vh 0 12vh 0;
+}
+
+#heroSection h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: 'Spartan';
+}
+
+#heroSection p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .9rem;
+}
+
+#gameSection {
+  background-image: url("/assets/line.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  height: 100vh;
+}
+
+#gameSection .icon img {
+  margin-bottom: -90px;
+  width: 80px;
+}
+
+#gameSection .icon {
+  background-color: #1A2653;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+#gameSection p {
+  margin: 0;
+  font-size: .8rem;
+}
+
+#gameSection a {
+  text-decoration: none;
+  color: #0036FF;
+  cursor: pointer;
+}
+
+#gameSection a img {
+  width: 18px;
+}
+
+#gameSection .game {
+  height: 24vh;
+}
+
+#gameSection .game h2 {
+  margin-top: 1rem;
+}
+
+#gameSection .coindlip {
+  margin-top: 50vh !important;
+}
+
+#gameSection .rolldice {
+  margin-top: 70vh !important;
+}
+
+#gameSection .twodice {
+  margin-top: 20vh !important;
+}
+
+#gameSection .etheroll {
+  margin-top: 15vh !important;
+}
+
+@media only screen and (max-width: 760px) {
+  #gameSection {
+    background-image: none;
+    margin-bottom: 100vh !important;
+  }
+  #gameSection .coindlip,
+  #gameSection .rolldice,
+  #gameSection .twodice,
+  #gameSection .etheroll {
+    margin-top: 0vh !important;
+    margin-bottom: 23vh !important;
+  }
+}
+
+#infoSection {
+  margin-top: 15vh;
+}
+
+#infoSection .card {
+  zoom: .85;
+  margin: 1rem 0 0 0;
+  background-color: #181E29 !important;
+  padding: .25rem 0rem;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+  -webkit-box-shadow: 0px 4px 4px 0px #00000040;
+          box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 1rem;
+}
+
+#infoSection .card h6 {
+  margin: 1rem 0;
+  color: #4972FF;
+}
+
+#infoSection .card h2 {
+  margin: 0;
+}
+
+#infoSection .card h2 span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+#infoSection .card .winner img {
+  width: 20px;
+  margin: 5px;
+}
+
+#infoSection .card .winner span {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+#infoSection .card .winner span span {
+  margin-left: 0rem;
+  font-size: 1rem;
+}
+
+.panel {
+  background-color: #181E29 !important;
+  border-radius: 10px;
+  -webkit-box-shadow: -3px 3px 30px black;
+          box-shadow: -3px 3px 30px black;
+}
+
+.playArea .title img {
+  width: 50px;
+}
+
+.playArea .title h1 {
+  font-size: 1.8rem;
+  margin: 1rem 1rem;
+  font-weight: 500;
+}
+
+.playArea .option,
+.playArea .decrease,
+.playArea .increase,
+.playArea .betAmount {
+  background-color: #121721;
+}
+
+.playArea .options {
+  padding: 0 3rem;
+  cursor: pointer;
+}
+
+.playArea .option {
+  font-size: .7rem;
+  padding: 2% 6%;
+  border-radius: 40px;
+}
+
+.playArea .increase,
+.playArea .decrease {
+  padding: 3%;
+  cursor: pointer;
+  border-radius: 80px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.playArea .increase img,
+.playArea .decrease img {
+  width: 20px;
+}
+
+.playArea .betAmount {
+  padding: 3% 22%;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.statsArea {
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+.statsArea h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.statsArea h2 {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.statsArea p {
+  color: #2B7B3D;
+}
+
+.statsArea .stat {
+  margin-bottom: 2rem;
+  font-family: 'spartan';
+}
+
+.statsArea .stat h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.statsArea .stat h2 {
+  font-size: 1.24rem;
+  margin-bottom: .5rem;
+}
+
+.statsArea .stat span img {
+  width: 35px;
+  margin: 0 5px;
+  margin-top: -10px;
+}
+
+.statsArea .stat span {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.tableArea .title {
+  font-family: 'spartan';
+}
+
+.tableArea table {
+  color: white;
+  background-color: #181E29 !important;
+}
+
+.tableArea table td {
+  border: none;
+  padding: 0;
+  padding-top: .5rem;
+}
+
+.tableArea td:last-child,
+.tableArea th:last-child {
+  text-align: right;
+}
+
+.tableArea td:nth-child(3),
+.tableArea th:nth-child(3) {
+  text-align: center;
+}
+
+.tableArea .result.glow {
+  color: #35e435;
+}
+
+.tableArea .result {
+  color: #969CB2;
+}
+
+.tableArea h2 {
+  font-size: 1.8rem;
+  margin: 0 2rem;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #181E29;
+  padding: 2rem 50rem;
+  margin: 0 3rem;
+  margin-top: 20vh;
+}
+
+footer .px-5 {
+  padding: 5rem !important;
+}
+
+footer .h2,
+footer .h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer .footer-section {
+  margin: 0rem 0 0 0rem;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 760px) {
+  footer .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .h3 {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#TNDC {
+  padding: 2rem 0rem;
+}
+
+#TNDC h2,
+#TNDC h3 {
+  font-size: 1.2rem;
+}
+
+#TNDC h2 {
+  margin: 3rem 0 1rem 0;
+}
+
+#TNDC h3 {
+  line-height: 1.6;
+  font-weight: lighter;
+}
+
+#TNDC ul li {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.Area .dice {
+  opacity: 60%;
+}
+
+.Area .dice-active {
+  opacity: 100%;
+}
+
+.twoDice .dice {
+  margin: -.8rem -.6rem;
+}
+
+.twoDice img {
+  width: 100%;
+}
+
+.coinFlip img {
+  width: 70%;
+}
+
+.coinFlip p {
+  font-size: .8rem;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #121721;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: url("assets/slider.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  zoom: 4;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20vw;
+  height: 20vh;
+  border: 0;
+  background: url("assets/slider.png");
+  cursor: pointer;
+}
+
+tbody img {
+  width: 20px;
+  padding: 2px;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody .cross td {
+  color: #FDDE67;
+}
+
+tbody .ace td {
+  color: #969CB2;
+}
+
+@media only screen and (max-width: 760px) {
+  .twoDice .dice {
+    margin: 0 !important;
+  }
+  .twoDice img {
+    width: 100% !important;
+  }
+  #heroSection {
+    margin: 3vh 0 !important;
+  }
+  .bet {
+    zoom: .7;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

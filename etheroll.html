@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice2Win</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Start of nav section -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">GAMES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAIRPLAY </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of nav section -->
+
+    <div class="container-fluid mt-3">
+        <div class="row mx-lg-5 mx-2">
+            <div class="circles"></div>
+            <div class="circle2"></div>
+
+            <section class="playArea panel col-lg-4" id="playArea">
+                <div class="title d-flex my-4 justify-content-center">
+                    <img class="col-2 " src="assets/etheroll_al.svg" alt="">
+                    <h1>Etheroll</h1>
+                </div>
+
+                <div class="Area coinFlip container pb-2 px-lg-5">
+                    <div class="slidecontainer my-4">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <div class="d-flex pt-2 justify-content-between">
+                        <!-- <p>Value: <span id="demo"></span></p> -->
+                        <p>1% </p>
+                        <p><span id="demo"></span>%</p>
+                        <p>97%</p>
+                    </div>
+                    <p class="text-center">Adjust your win chance</p>
+
+                    <script>
+                        var slider = document.getElementById("myRange");
+                        var output = document.getElementById("demo");
+                        output.innerHTML = slider.value;
+
+                        slider.oninput = function () {
+                            output.innerHTML = this.value;
+                        }
+                    </script>
+                </div>
+
+                <div class="bet">
+                    <div class="options d-flex justify-content-around mt-4">
+                        <div class="option">0.25</div>
+                        <div class="option">0.50</div>
+                        <div class="option">0.75</div>
+                        <div class="option">Max</div>
+                    </div>
+                    <div class="better d-flex justify-content-around align-items-center mt-4">
+                        <div class="decrease"><img src="assets/minus.png" alt=""></div>
+                        <div class="betAmount">0.10</div>
+                        <div class="increase"><img src="assets/plus.png" alt=""></div>
+                    </div>
+                    <p class="text-center mt-4">Your bet</p>
+                </div>
+            </section>
+
+            <section class="statsArea col-lg-4 d-flex flex-column align-items-center" id="statsArea">
+                <div class="stat text-center">
+                    <h3>Winning Chance</h3>
+                    <h2>50.00%</h2>
+                </div>
+                <div class="stat text-center">
+                    <h3>Winning Pays</h3>
+                    <h2><span><img src="assets/coindlip_al.svg" alt=""></span> 1.96 x</h2>
+                    <p>You can win 0.196 ETH</p>
+                </div>
+                <div class="stat text-center">
+                    <h3>Winning Chance</h3>
+                    <h2><span><img src="assets/etheroll_al.svg" alt=""></span> 0.673 <span>ETH</span></h2>
+                    <p>0.1% jackpot chance</p>
+                </div>
+            </section>
+
+
+            <section class="panel tableArea  col-lg-4" id="tableArea">
+                <h2 class="text-center title my-4">Game History</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Player</th>
+                            <th scope="col">Bet</th>
+                            <th scope="col">Result</th>
+                            <th scope="col">ETH</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="ace">
+                            <td> <span><img src="assets/ace.svg" alt=""></span> 0xb6e8b5</td>
+                            <td>0.16 &GreaterFullEqual; 76</td>
+                            <td class="text-center result glow">2</td>
+                            <td>-- &nbsp; 93 <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="ace">
+                            <td> <span><img src="assets/ace.svg" alt=""></span> 0xb6e8b5</td>
+                            <td>0.16 &GreaterFullEqual; 76</td>
+                            <td class="text-center result glow">2</td>
+                            <td>-- &nbsp; 93 <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="ace">
+                            <td> <span><img src="assets/ace.svg" alt=""></span> 0xb6e8b5</td>
+                            <td>0.16 &GreaterFullEqual; 76</td>
+                            <td class="text-center result glow">2</td>
+                            <td>-- &nbsp; 93 <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="ace">
+                            <td> <span><img src="assets/ace.svg" alt=""></span>
+                                0xb6e8b5</td>
+                            <td>0.16
+                                &GreaterFullEqual;
+                                76</td>
+                            <td class="text-center result">
+                                2</td>
+                            <td>0.128 &nbsp; 93
+                                <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="cross">
+                            <td> <span><img src="assets/cross.svg" alt=""></span> 0xb6e8b5</td>
+                            <td>0.16 &GreaterFullEqual; 76</td>
+                            <td class="text-center result">2</td>
+                            <td>0.128 &nbsp; 93 <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="cross">
+                            <td> <span><img src="assets/cross.svg" alt=""></span> 0xb6e8b5</td>
+                            <td>0.16 &GreaterFullEqual; 76</td>
+                            <td class="text-center result">2</td>
+                            <td>0.128 &nbsp; 93 <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="cross">
+                            <td> <span><img src="assets/cross.svg" alt=""></span> 0xb6e8b5</td>
+                            <td>0.16 &GreaterFullEqual; 76</td>
+                            <td class="text-center result">2</td>
+                            <td>0.128 &nbsp; 93 <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="cross">
+                            <td> <span><img src="assets/cross.svg" alt=""></span>
+                                0xb6e8b5</td>
+                            <td>0.16
+                                &GreaterFullEqual;
+                                76</td>
+                            <td class="text-center result">
+                                2</td>
+                            <td>0.128 &nbsp; 93
+                                <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="cross">
+                            <td> <span><img src="assets/cross.svg" alt=""></span>
+                                0xb6e8b5
+                            </td>
+                            <td>0.16
+                                &GreaterFullEqual;
+                                76
+                            </td>
+                            <td class="text-center result">
+                                2
+                            </td>
+                            <td>0.128
+                                &nbsp;
+                                93
+                                <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="cross">
+                            <td> <span><img src="assets/cross.svg" alt=""></span>
+                                0xb6e8b5
+                            </td>
+                            <td>0.16
+                                &GreaterFullEqual;
+                                76
+                            </td>
+                            <td class="text-center result">
+                                2
+                            </td>
+                            <td>0.128
+                                &nbsp;
+                                93
+                                <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="cross">
+                            <td> <span><img src="assets/cross.svg" alt=""></span>
+                                0xb6e8b5
+                            </td>
+                            <td>0.16
+                                &GreaterFullEqual;
+                                76
+                            </td>
+                            <td class="text-center result">
+                                2
+                            </td>
+                            <td>0.128
+                                &nbsp;
+                                93
+                                <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr class="cross">
+                            <td> <span><img src="assets/cross.svg" alt=""></span>
+                                0xb6e8b5
+                            </td>
+                            <td>0.16
+                                &GreaterFullEqual;
+                                76
+                            </td>
+                            <td class="text-center result">
+                                2
+                            </td>
+                            <td>0.128
+                                &nbsp;
+                                93
+                                <span><img src="assets/arrow.svg" style="width: 12px;" alt=""></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+</script>
+
+</html>
